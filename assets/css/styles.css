@@ -1,0 +1,603 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 16px;
+    min-width: 98px;
+    left: 1177px;
+    top: 38px;
+    background-color: #0f1b4c;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =================== Header ======================= */
+.header {
+    height: 100vh;
+    background-color: #e6f0ff;
+}
+
+/* =================== Navbar ======================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4f5361;
+    padding: 10px 14px;
+}
+
+.navbar ul a:hover {
+    opacity: 0.6;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
+.navbar .actions .sign-up {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #0f1b4c;
+}
+
+.navbar .actions .register {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+/* =================== Hero ======================= */
+.hero {
+    margin-top: 39px;
+    display: flex;
+    height: calc(100vh - 78px - 39px);
+}
+
+.hero .info {
+    margin-top: 91px;
+    width: 50%;
+}
+
+.hero .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687691;
+}
+
+.hero .title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.19;
+    color: #000336;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #5a6473;
+}
+
+.hero .hero-btn {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.hero .hero-img {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.hero .hero-img img {
+    max-width: 100%;
+}
+
+/* =================== Clients ======================= */
+.clients {
+    margin-top: 79px;
+    padding: 43px 0 63px;
+}
+
+.clients .row-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .row-desc {
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .row-desc p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .row-brand {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =================== Guides ======================= */
+.guides {
+    margin-top: 40px;
+    padding: 93px 0 79px;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.guides .desc {
+    width: 459px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    font-weight: 400;
+    font-size: 1.6;
+    line-height: 1.88;
+    text-align: center;
+    color: #5a6473;
+}
+
+.guides .list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-guide .guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-item .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #3b3c45;
+}
+
+.guide-item .link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #0689ff;
+}
+
+.guide-item .link .arrow {
+    margin-left: 6px;
+}
+
+.guides .guide-cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.guides .guide-cta .btn {
+    width: 170px;
+}
+
+/* =================== Features ======================= */
+.featured {
+    margin-top: 41px;
+    padding: 110px 0;
+    background: #f5fafe;
+}
+
+.featured header .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #000339;
+}
+
+.featured header .row-desc {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured header .row-desc p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.featured .row-desc .link {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #0689ff;
+}
+
+.featured .row-desc .link img {
+    margin-left: 8px;
+}
+
+.featured .list {
+    margin-top: 70px;
+    display: flex;
+    gap: 30px;
+}
+
+.featured .item {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.featured .item .body {
+    margin: 17px 20px 23px;
+}
+
+.featured .item .title a {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000339;
+}
+
+.featured .item .desc {
+    --line-clamp: 3;
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #a3a6ab;
+    word-break: break-all;
+}
+
+.featured .item .info {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.featured .item .icon {
+    margin: 0 8px 0 22px;
+}
+
+.featured .item .icon:first-child {
+    margin-left: 0;
+}
+
+.featured .item .label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    color: #4d4d52;
+}
+
+/* =================== Stats ======================= */
+.stats {
+    margin-top: 75px;
+    padding: 50px 228px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.stats .row-items .img-block,
+.stats .row-items .info-block {
+    width: 50%;
+}
+
+.stats .row-items .img-block {
+    position: relative;
+}
+
+.stats .img-block .image {
+    max-width: 400px;
+    height: 460px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    border-radius: 12px;
+}
+
+.stats .img-block .trend-block {
+    position: absolute;
+    top: 0;
+    left: -95px;
+    width: 240px;
+    padding: 45px 22px 40px;
+    background-color: #ffffff;
+    border-radius: 0 0 12px 12px;
+}
+
+.stats .trend-block .row {
+    justify-content: space-between;
+}
+
+.stats .trend-block .row span {
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+
+.stats .trend-block .trend-decs {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+
+.stats .trend-block .seperate {
+    margin-top: 25px;
+    height: 1.2px;
+    background: #e9e9e9;
+}
+
+.stats .trend-block .avatars {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+}
+
+.stats .trend-block .group-avatar {
+    display: flex;
+}
+
+.stats .group-avatar .face-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -4px;
+}
+
+.stats .avatars .face-icon:first-child {
+    margin-left: 0;
+}
+
+.stats .info-block {
+    margin: 80px 0 0 165px;
+}
+
+.stats .info-block .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color: #000339;
+}
+
+.stats .info-block .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.stats .info-block .desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.stats .row-qty {
+    margin-top: 110px;
+    justify-content: space-between;
+}
+
+.stats .row-qty .number {
+    font-weight: 600;
+    font-size: 6.4rem;
+    color: #000000;
+}
+
+.stats .row-qty .desc {
+    margin-top: 22px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #7b8087;
+}
+
+/* =================== Subscriptions ======================= */
+.subscriptions {
+    margin-top: 50px;
+}
+
+.subscriptions .body {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 40px;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+
+.subscriptions .body .info {
+    width: 670px;
+    padding: 0 80px;
+}
+
+.subscriptions .info .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.subscriptions .info .desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.subscriptions .btn {
+    margin-top: 20px;
+    width: 150px;
+    max-width: 150px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #002366;
+    background-color: #ffffff;
+}
+
+.subscriptions .body .image {
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+}
+
+/* =================== Footer ======================= */
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 60px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row .colunm {
+    width: 25%;
+}
+
+.footer .colunm .heading {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1c1c1d;
+}
+
+.footer .colunm .list {
+    margin-top: 40px;
+}
+
+.footer .colunm .list .item {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #7a7a7e;
+}
+
+.footer .colunm .desc {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #7a7a7e;
+}
+
+.footer .colunm .social {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer .row-info {
+    margin-top: 80px;
+}
+
+.footer .copy-right {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #c2c2c2;
+}
