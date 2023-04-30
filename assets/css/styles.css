@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -98,14 +103,14 @@ a {
 
 /* =================== Hero ======================= */
 .hero-wrap {
-    height: 100vh;
+    position: relative;
+    height: calc(100vh - 90px);
     background-color: #e6f0ff;
 }
 
 .hero {
-    padding-top: 40px;
+    padding-top: 28px;
     display: flex;
-    height: calc(100vh - 78px - 39px);
 }
 
 .hero .info {
@@ -143,8 +148,9 @@ a {
 }
 
 .hero .hero-img {
-    width: 50%;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 65px;
 }
 
 .hero .hero-img img {
